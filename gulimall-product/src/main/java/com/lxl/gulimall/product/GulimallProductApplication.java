@@ -1,9 +1,17 @@
 package com.lxl.gulimall.product;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+/**
+ * 整合mybatis-plus
+ *
+ *
+ */
 @SpringBootApplication
+@MapperScan("com.lxl.gulimall.product.dao")
 public class GulimallProductApplication {
 
     public static void main(String[] args) {
